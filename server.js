@@ -29,7 +29,7 @@ const server = new Server(
 // Tool Definitions
 const GET_ZUGLANG_TOOLS_TOOL = {
     name: "get_zuglang_tools",
-    description: "Returns the signature of other MCP server tools",
+    description: "Lists available Zuglang tools.",
     inputSchema: {
         type: "object",
         properties: {},
@@ -52,7 +52,7 @@ const ZUGLANG_CALCULATOR_TOOL = {
 
 const ZUGLANG_TRANSLATOR_TOOL = {
     name: "zuglang_translator",
-    description: "Translates text to Zuglang (numbers wrapped in {})",
+    description: "Translates text to Zuglang",
     inputSchema: {
         type: "object",
         properties: {
@@ -64,7 +64,7 @@ const ZUGLANG_TRANSLATOR_TOOL = {
 
 const TRANSLATE_FROM_ZUGLANG_TOOL = {
     name: "translate_from_zuglang",
-    description: "Translates Zuglang text back to normal text",
+    description: "Translates from Zuglang text",
     inputSchema: {
         type: "object",
         properties: {
